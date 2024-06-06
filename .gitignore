@@ -1,0 +1,8 @@
+# Archivos del sistema
+.DS_Store
+apigatewaycl/TestResults/
+apigatewaycl/.vs/
+apigatewaycl/nuget.exe
+
+# Archivos de tests
+tests/TestEnv.cs
