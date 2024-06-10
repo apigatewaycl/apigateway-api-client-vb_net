@@ -23,7 +23,7 @@ Instalar usando el Administrador de Paquetes de NuGet:
 3.  Una vez que cargue la pestaña NuGet - Solución, Seleccione Examinar, y 
     busque "API Gateway".
 
-4.  Seleccione el proyecto en que quiera integrar API Gateway C#, y haga 
+4.  Seleccione el proyecto en que quiera integrar API Gateway VB.net, y haga 
     click en "Instalar".
 
 Autenticación en API Gateway
@@ -40,9 +40,9 @@ reconocida automáticamente por el cliente:
 Si no se desea usar una variable de entorno, al instanciar los objetos se
 deberá indicar el token del usuario. Ejemplo con el cliente genérico:
 
-.. code:: VB6
+.. code:: VB.net
 
-    imports apigatewaycl
+    Imports apigatewaycl
 
     Dim APIGATEWAY_API_TOKEN = "aquí-tu-token-de-usuario"
     Environment.SetEnvironmentVariable("APIGATEWAY_API_TOKEN", APIGATEWAY_API_TOKEN)
@@ -52,10 +52,10 @@ El siguiente es un ejemplo con el cliente específico para BHE. Primero se pasan
 los datos obligatorios de RUT y clave del usuario. Luego además se pasa el token
 delusuario de la API.
 
-.. code:: VB6
+.. code:: VB.net
 
-    using System.Collections.Generic
-    using apigatewaycl.api_client.sii
+    Imports System.Collections.Generic
+    Imports apigatewaycl.api_client.sii
 
 
     Dima APIGATEWAY_API_TOKEN As String = "aquí-tu-token-de-usuario"
