@@ -5,11 +5,11 @@ apigatewaycl/.vs/
 apigatewaycl/bin/
 apigatewaycl/obj/
 apigatewaycl/packages/
-apigatewaycl/Program.cs
+apigatewaycl/Program.vb
 apigatewaycl/nuget.exe
 
 # Archivos de tests
-tests/TestEnv.cs
+tests/TestEnv.vb
 tests/readme.txt
 tests/bin/
 tests/obj/
