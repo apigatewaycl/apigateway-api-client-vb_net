@@ -34,7 +34,8 @@ Public Class TestEnv_dist
 
         ' Variables de BHE
         Dim TEST_BHE_FECHA As String = "202405"
-        Dim TEST_BHE_CODIGO_PDF As String = ""
+        Dim TEST_BHE_CODIGO As String = ""
+        Dim TEST_BHE_EMAIL As String = ""
 
         ' Variables de Indicador UF
         Dim TEST_UF_FECHA As String = "2024-05-17"
@@ -50,7 +51,8 @@ Public Class TestEnv_dist
         Environment.SetEnvironmentVariable("USUARIO_CLAVE", USUARIO_CLAVE)
 
         Environment.SetEnvironmentVariable("TEST_BHE_FECHA", TEST_BHE_FECHA)
-        Environment.SetEnvironmentVariable("TEST_BHE_CODIGO_PDF", TEST_BHE_CODIGO_PDF)
+        Environment.SetEnvironmentVariable("TEST_BHE_CODIGO", TEST_BHE_CODIGO)
+        Environment.SetEnvironmentVariable("TEST_BHE_EMAIL", TEST_BHE_EMAIL)
 
         Environment.SetEnvironmentVariable("TEST_UF_FECHA", TEST_UF_FECHA)
         Environment.SetEnvironmentVariable("TEST_UF_MES", TEST_UF_MES)

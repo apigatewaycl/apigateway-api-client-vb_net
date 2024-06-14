@@ -150,6 +150,11 @@ Public Class ApiClient
         Dim fullUrl As String = New Uri(New Uri(Me.url & "/"), ApiPath.TrimStart("/"c)).ToString()
         Dim requestMessage As HttpRequestMessage = New HttpRequestMessage(method, fullUrl)
 
+
+        If data IsNot Nothing Then
+            Dim jsonData = JsonConvert.SerializeObject(data)
+            requestMessage.Content = New StringContent(jsonData, Encoding.UTF8, "application/json")
+        End If
         If headers IsNot Nothing Then
             For Each header In headers
                 requestMessage.Headers.Add(header.Key, header.Value)
@@ -159,14 +164,8 @@ Public Class ApiClient
             requestMessage.Headers.Add(header.Key, header.Value)
         Next
 
-        If data IsNot Nothing Then
-            Dim jsonData = JsonConvert.SerializeObject(data)
-            requestMessage.Content = New StringContent(jsonData, Encoding.UTF8, "application/json")
-        End If
-
         Try
             Dim response = Me.client.SendAsync(requestMessage).Result
-            Trace.WriteLine(response)
             Dim resp As HttpResponseMessage = Me.CheckAndReturnResponse(response)
 
             Return resp

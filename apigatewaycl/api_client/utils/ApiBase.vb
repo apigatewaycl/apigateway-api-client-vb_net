@@ -19,7 +19,7 @@
 
 Public MustInherit Class ApiBase
     ' Variables a utilizar en ApiBase
-    Protected client As ApiClient
+    Public client As ApiClient
     Protected auth As Dictionary(Of String, Dictionary(Of String, String))
 
     ''' <summary>
