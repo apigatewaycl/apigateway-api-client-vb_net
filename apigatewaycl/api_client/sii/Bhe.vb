@@ -105,7 +105,7 @@ Public Class BheEmitidas
     ''' <returns>Dictionary(Of String, Object) Respuesta JSON con la confirmación del envío del email.</returns>
     Public Function Email(codigo As String, correo As String) As Dictionary(Of String, Object)
         Dim emailDict As New Dictionary(Of String, String) From {
-            {"correo", correo}
+            {"email", correo}
         }
         Dim body As New Dictionary(Of String, Object) From {
             {"auth", Me.GetAuthPass()},
