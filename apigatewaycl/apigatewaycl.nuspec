@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>Package</id>
+    <id>apigatewayclvbnet</id>
     <version>1.0.0</version>
-    <title>apigatewaycl-vb.net</title>
+    <title>API Gateway CL VBNET</title>
     <authors>API Gateway</authors>
     <owners>API Gateway</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <!-- <icon>icon.png</icon> -->
     <projectUrl>https://www.apigateway.cl</projectUrl>
     <description>Cliente para realizar la integración con los servicios web de API Gateway desde Visual Basic.net.</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes>Lanzamiento de primera versión del cliente de la API que permite interactuar con el SII usando Visual Basic.NET.</releaseNotes>
     <copyright>Copyright (C) API Gateway www.apigateway.cl</copyright>
     <tags>api sii dte facturacion electronica chile</tags>
   </metadata>

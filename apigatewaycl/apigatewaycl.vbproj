@@ -7,7 +7,7 @@
     <ProjectGuid>{1FB0F267-790C-407E-99AC-0DD64A4BB856}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>apigatewaycl</RootNamespace>
-    <AssemblyName>ApiGatewayCL-VB.NET</AssemblyName>
+    <AssemblyName>ApiGatewayCLVBNET</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -19,7 +19,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ApiGatewayCL-VB.NET.xml</DocumentationFile>
+    <DocumentationFile>ApiGatewayCLVBNET.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -28,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ApiGatewayCL-VB.NET.xml</DocumentationFile>
+    <DocumentationFile>ApiGatewayCLVBNET.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
