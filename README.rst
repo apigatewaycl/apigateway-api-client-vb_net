@@ -1,30 +1,63 @@
 API Gateway: Cliente de API en Visual Basic
 =====================================
 
+Enlaces sujetos a cambios.
 
-
+.. image:: https://img.shields.io/nuget/v/apigatewayclvbnet.svg
+    :target: https://www.nuget.org/packages/apigatewayclvbnet/
+    :alt: NuGet version
+.. image:: https://img.shields.io/nuget/dt/apigatewayclvbnet.svg
+    :target: https://www.nuget.org/packages/apigatewayclvbnet/
+    :alt: NuGet downloads
 
 Cliente para realizar la integración con los servicios web de `API Gateway <https://www.apigateway.cl>`_ desde Visual Basic.
 
 Instalación y actualización
 ---------------------------
 
-Puedes actualizar usando el administrador de paquetes de NuGet, o a través
-de la consola.
+Instalación mediante el Administrador de Paquetes NuGet
+-------------------------------------------------------
 
-Instalar usando el Administrador de Paquetes de NuGet:
+1.  Abre tu proyecto en Visual Studio.
 
-1.  Crea o abre su proyecto en Visual Studio.
+2.  Haz clic derecho en el proyecto en el Explorador de Soluciones y 
+    selecciona "Administrar paquetes NuGet...".
 
-2.  Seleccione en la barra superior:
-    Herramientas, Administrador de paquetes NuGet, Administrar paquetes
-    NuGet para la solución...
+3.  En la pestaña "Examinar", busca `apigatewaycl`. Debe ser la versión VB.NET
 
-3.  Una vez que cargue la pestaña NuGet - Solución, Seleccione Examinar, y 
-    busque "API Gateway".
+4.  Selecciona el paquete `apigatewaycl` y haz clic en "Instalar".
 
-4.  Seleccione el proyecto en que quiera integrar API Gateway VB.net, y haga 
-    click en "Instalar".
+Instalación desde la línea de comandos (cmd)
+------------------------------------------------------
+
+1.  Abre la línea de comandos desde Herramientas, Administrador de paquetes NuGet,
+    Consola del administrador de paquetes.
+
+2.  Ejecuta el siguiente comando para instalar `apigatewaycl`:
+
+.. code:: shell
+   nuget install apigatewayclvbnet
+
+Cliente genérico vs clientes específicos
+----------------------------------------
+
+Este cliente de API Gateway tiene 2 formas de acceder a los recursos de la API:
+
+1.  Cliente genérico: es un cliente que permite consumir de manera sencilla cualquier
+    recurso de la API, que actualmente exista o sea añadido en el futuro. Esto se logra
+    porque el cliente recibe los nombres de los recursos, la parte de la URL que permite
+    acceder al servicio web solicitado. Se proveen métodos que sólo sirven para acceder
+    a la API de manera genérica, pero no para hacer acciones específicas ni obtener los
+    datos en un formato específico. Este cliente es el que entrega mayor flexibilidad, ya
+    que cada programador decide qué recursos desea consumir y cómo desea obtener los datos
+    del mismo.
+
+2.  Clientes específicos: son clases que permiten acceder de forma más natural a los
+    recursos de la API. Al instanciar la clase, se tendrán métodos sencillos con parámetros
+    para consumir la API; sin ser necesario preocuparse de recordar o buscar en la
+    documentación el nombre de los recursos que se deben consumir. Además de entregar los
+    datos ya "listos" para ser usados en vez de tener que preocuparse de qué método del
+    cliente genérico usar para obtenerlos en el formato requerido.
 
 Autenticación en API Gateway
 ----------------------------
@@ -50,7 +83,7 @@ deberá indicar el token del usuario. Ejemplo con el cliente genérico:
 
 El siguiente es un ejemplo con el cliente específico para BHE. Primero se pasan
 los datos obligatorios de RUT y clave del usuario. Luego además se pasa el token
-delusuario de la API.
+del usuario de la API.
 
 .. code:: VB.net
 
@@ -66,7 +99,7 @@ delusuario de la API.
     {
         { "usuario_rut", SII_USUARIO_RUT },
         { "usuario_clave", SII_USUARIO_CLAVE }
-    };
+    }
     Dim ListadoBhe As New BheEmitidas(usuario)
 
 Si se usan variables de entorno, en ambos ejemplos se puede omitir el argumento `api_token`.
