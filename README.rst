@@ -3,11 +3,11 @@ API Gateway: Cliente de API en Visual Basic
 
 Enlaces sujetos a cambios.
 
-.. image:: https://img.shields.io/nuget/v/apigatewayclvbnet.svg
-    :target: https://www.nuget.org/packages/apigatewayclvbnet/
+.. image:: https://img.shields.io/nuget/v/apigatewayclvb.svg
+    :target: https://www.nuget.org/packages/apigatewayclvb/
     :alt: NuGet version
-.. image:: https://img.shields.io/nuget/dt/apigatewayclvbnet.svg
-    :target: https://www.nuget.org/packages/apigatewayclvbnet/
+.. image:: https://img.shields.io/nuget/dt/apigatewayclvb.svg
+    :target: https://www.nuget.org/packages/apigatewayclvb/
     :alt: NuGet downloads
 
 Cliente para realizar la integración con los servicios web de `API Gateway <https://www.apigateway.cl>`_ desde Visual Basic.
@@ -91,7 +91,7 @@ del usuario de la API.
     Imports apigatewaycl.api_client.sii
 
 
-    Dima APIGATEWAY_API_TOKEN As String = "aquí-tu-token-de-usuario"
+    Dim APIGATEWAY_API_TOKEN As String = "aquí-tu-token-de-usuario"
     Environment.SetEnvironmentVariable("APIGATEWAY_API_TOKEN", APIGATEWAY_API_TOKEN)
     Dim SII_USUARIO_RUT As String = "rut_sii"
     Dim SII_USUARIO_CLAVE As String = "clave_sii"
@@ -125,4 +125,6 @@ Enlaces
 -------
 
 - `Sitio web API Gateway <https://www.apigateway.cl>`_.
-- `Código fuente en GitHub <https://github.com/apigatewaycl/apigateway-api-client-c_sharp>`_.
+- `Código fuente en GitHub <https://github.com/apigatewaycl/apigateway-api-client-vb6>`_.
+- `Paquete en NuGet <https://www.nuget.org/packages/apigatewayclvb>`_.
+- `Documentación en Read the Docs <https://apigatewaycl.readthedocs.io/es/latest>`_.

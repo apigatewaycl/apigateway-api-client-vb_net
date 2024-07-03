@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("ApiGatewayCLVBNET")>
+<Assembly: AssemblyTitle("ApiGatewayCL.VB")>
 <Assembly: AssemblyDescription("Cliente para realizar la integración con los servicios web de API Gateway desde Visual Basic.net.")>
 <Assembly: AssemblyCompany("API Gateway")>
 <Assembly: AssemblyProduct("API Gateway API Client VB.net")>
