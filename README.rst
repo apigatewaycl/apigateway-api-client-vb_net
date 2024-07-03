@@ -1,13 +1,13 @@
-API Gateway: Cliente de API en Visual Basic
+API Gateway: Cliente de API en Visual Basic .NET
 =====================================
 
 Enlaces sujetos a cambios.
 
-.. image:: https://img.shields.io/nuget/v/apigatewayclvb.svg
-    :target: https://www.nuget.org/packages/apigatewayclvb/
+.. image:: https://img.shields.io/nuget/v/apigatewaycl.vb.svg
+    :target: https://www.nuget.org/packages/apigatewaycl.vb/
     :alt: NuGet version
-.. image:: https://img.shields.io/nuget/dt/apigatewayclvb.svg
-    :target: https://www.nuget.org/packages/apigatewayclvb/
+.. image:: https://img.shields.io/nuget/dt/apigatewaycl.vb.svg
+    :target: https://www.nuget.org/packages/apigatewaycl.vb/
     :alt: NuGet downloads
 
 Cliente para realizar la integración con los servicios web de `API Gateway <https://www.apigateway.cl>`_ desde Visual Basic.
@@ -125,6 +125,6 @@ Enlaces
 -------
 
 - `Sitio web API Gateway <https://www.apigateway.cl>`_.
-- `Código fuente en GitHub <https://github.com/apigatewaycl/apigateway-api-client-vb6>`_.
-- `Paquete en NuGet <https://www.nuget.org/packages/apigatewayclvb>`_.
+- `Código fuente en GitHub <https://github.com/apigatewaycl/apigateway-api-client-vb_net>`_.
+- `Paquete en NuGet <https://www.nuget.org/packages/apigatewaycl.vb>`_.
 - `Documentación en Read the Docs <https://apigatewaycl.readthedocs.io/es/latest>`_.
