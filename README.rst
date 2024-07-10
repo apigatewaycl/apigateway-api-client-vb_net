@@ -25,7 +25,7 @@ Instalación mediante el Administrador de Paquetes NuGet
 
 3.  En la pestaña "Examinar", busca `apigatewaycl`. Debe ser la versión VB.NET
 
-4.  Selecciona el paquete `apigatewaycl` y haz clic en "Instalar".
+4.  Selecciona el paquete `apigatewaycl.vb` y haz clic en "Instalar".
 
 Instalación desde la línea de comandos (cmd)
 ------------------------------------------------------
@@ -36,7 +36,7 @@ Instalación desde la línea de comandos (cmd)
 2.  Ejecuta el siguiente comando para instalar `apigatewaycl`:
 
 .. code:: shell
-   nuget install apigatewayclvbnet
+   nuget install apigatewaycl.vb
 
 Cliente genérico vs clientes específicos
 ----------------------------------------
@@ -68,7 +68,7 @@ reconocida automáticamente por el cliente:
 
 .. code:: shell
 
-    export APIGATEWAY_API_TOKEN = "aquí-tu-token-de-usuario"
+    set APIGATEWAY_API_TOKEN = "aquí-tu-token-de-usuario"
 
 Si no se desea usar una variable de entorno, al instanciar los objetos se
 deberá indicar el token del usuario. Ejemplo con el cliente genérico:

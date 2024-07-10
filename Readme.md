@@ -14,7 +14,7 @@ Cliente para realizar la integración con los servicios web de [API Gateway](htt
 1. Abre tu proyecto en Visual Studio.
 2. Haz clic derecho en el proyecto en el Explorador de Soluciones y selecciona "Administrar paquetes NuGet...".
 3. En la pestaña "Examinar", busca `apigatewaycl`. Debe ser la versión Visual Basic.NET (vb, vbnet, o vb.net).
-4. Selecciona el paquete `apigatewaycl` y haz clic en "Instalar".
+4. Selecciona el paquete `apigatewaycl.vb` y haz clic en "Instalar".
 
 ### Instalación desde la línea de comandos (cmd)
 
@@ -22,7 +22,7 @@ Cliente para realizar la integración con los servicios web de [API Gateway](htt
 2. Ejecuta el siguiente comando para instalar `apigatewaycl`:
 
 ```sh
-nuget install apigatewayclvb
+nuget install apigatewaycl.vb
 ```
 
 ### Cliente genérico vs clientes específicos
@@ -36,7 +36,7 @@ Clientes específicos: son clases que permiten acceder de forma más natural a l
 Lo más simple, y recomendado, es usar una variable de entorno con el [token del usuario](https://apigateway.cl/dashboard#api-auth), la cual será reconocida automáticamente por el cliente:
 
 ```sh
-export APIGATEWAY_API_TOKEN="aquí-tu-token-de-usuario"
+set APIGATEWAY_API_TOKEN="aquí-tu-token-de-usuario"
 ```
 
 Si no se desea usar una variable de entorno, al instanciar los objetos se deberá indicar el token del usuario. Ejemplo con el cliente genérico:
